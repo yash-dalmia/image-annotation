@@ -16,6 +16,9 @@ To run the application:
     2. ``npm run start`` - This will start app in ``http://localhost:3000``
 
 Screenshots:
+
 ![Upload Page](screenshots/UploadPage.PNG?raw=true "Upload Page")
+
 ![Images Page](screenshots/ImagesPage.PNG?raw=true "Images Page")
+
 ![Annotations Page](screenshots/AnnotationsPage.PNG?raw=true "Annotations Page")
