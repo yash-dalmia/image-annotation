@@ -1,0 +1,9 @@
+.annotation-div {
+    position: relative;
+    top: 20px;
+}
+
+.action-panel {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,137 @@
+.upload-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.image-upload-form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.image-upload-form button {
+  z-index: 4;
+  height: 40px;
+}
+
+.image-upload-div {
+  position: relative;
+  border: 2px dashed black;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-upload-div input {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  outline: none;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.image-upload-div input:hover {
+  cursor: pointer;
+}
+
+.upload-captions {
+  position: absolute;
+  top: 0px;
+  height: 200px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.upload-icon {
+  height: 64px;
+  width: 64px;
+}
+
+.preview-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-thumbnail {
+  display: flex;
+  flex-direction: column;
+  border: 2px dashed black;
+  padding: 4px;
+  justify-content: flex-end;
+  margin: 4px;
+  max-height: 250px;
+  width: 250px;
+}
+
+.preview-thumbnail img {
+  display: block;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.preview-thumbnail-panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.preview-label {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* .preview-label:hover {
+  overflow: visible;
+} */
+
+.name-tooltip, .name-tooltip .preview-label {
+  width: inherit;
+}
+.name-tooltip, .action-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.name-tooltip .tooltip-text, .action-tooltip .tooltip-text {
+  visibility: hidden;
+  min-width: 120px;
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 0%;
+}
+
+.name-tooltip .tooltip-text::after, .action-tooltip .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent lightblue transparent;
+}
+
+.preview-label:hover ~ .tooltip-text, .remove-icon:hover ~ .tooltip-text {
+  visibility: visible;
+}
+
+.remove-icon:hover {
+  cursor: pointer;
+}
+/* .preview-label:hover */
